@@ -1,0 +1,110 @@
+
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(115deg,rgba(0, 255, 255, 0.3),rgba(240, 248, 255, 0.4)),url(./asset/remy_loz-3vVzdb8KKIw-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main {
+    max-width: 680px;   
+    height: auto;
+    margin: 0px auto;
+       
+}
+::-webkit-scrollbar{
+    width:15px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb{
+    // background: rgba(0, 255, 255, 0.3);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,1); 
+}
+.header{ 
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 40px;
+    .title h1{
+        color: black;
+        text-shadow: 2px 2px 2px white;
+        font-size: 3em;
+        margin-block-end: 0;
+    }
+    .description p{
+        color: black;
+        font-style: italic;       
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+}
+
+.surver-form > .form-group:focus-within {
+    box-shadow: 0px 0.2em 2.5em wheat;
+    transform: scale(1.025); 
+}
+
+.surver-form {
+    background-color: darkcyan;
+    opacity: 0.9;
+    border-radius: 8px;
+    padding: 25px;
+
+    .form-group {
+        margin: 0 auto 1.25em;         
+        p{
+            font-size: 1.25rem;
+            font-weight: bold;
+            padding-left: 15px;
+        }   
+        .radio-input,
+        .checkbox-input{
+            margin: 0 10px 0 0;
+            transform: scale(1.6);
+        }
+        textarea {
+            width: 100%;
+            text-indent: 10px;
+            font-size: 17px;
+            resize: none;       
+            padding-top: 10px;   
+        }
+        .submit-style{
+            background-color: rgb(63, 211, 58);
+        }
+    }
+}
+
+.form-group > label{ 
+    display: flex;     
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1.25rem;
+    padding-left: 15px;
+}       
+.form-group > input, select {          
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.375rem;
+    border-radius: 4px;            
+    border: 1px solid lightblue;
+    padding-left: 15px;
+    font-size: 1.15rem;
+    transition: border-color 1s ease-in-out, box-shadow 0.5s ease-in-out;
+    
+}  
+.form-group > input:focus {
+    border-color: royalblue;
+    box-shadow: 2px 2px rgb(224, 156, 28);
+}
+
+#submit:hover{
+    box-shadow: 0px 0.2em 2.5em wheat;
+    transform: scale(1.025); 
+}
